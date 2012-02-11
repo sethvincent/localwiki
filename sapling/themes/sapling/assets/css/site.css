@@ -63,7 +63,7 @@ a:hover {
 table {
     margin-bottom: 1em;
 }
-p { 
+p {
     margin-bottom: 1em;
 }
 pre, code {
@@ -89,14 +89,8 @@ textarea, input, select {
 */
 
 #main {
-    margin-left: 5em;
-    margin-right: 8em;
-}
-@media screen and (max-width: 500px) {
-    #main {
-        margin-left: 0.5em;
-        margin-right: 0.5em;
-    }
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*
@@ -106,8 +100,7 @@ textarea, input, select {
 */
 
 #content {
-    margin-top: 1em;
-    margin-bottom: 1.4em;
+    margin: 1em 1.5em 1.4em 1.5em;
 }
 #content.has_map {
     min-height: 340px;
@@ -118,12 +111,12 @@ textarea, input, select {
     margin-right: 0;
 }
 .mapdata_detail #content {
-    margin-top: 0; 
+    margin-top: 0;
     margin-bottom: 0;
 }
 /* Page edit view - we don't want margins. */
 #main.page_form #content {
-    margin-top: 0.9em; 
+    margin-top: 0.9em;
 }
 
 /*
@@ -134,32 +127,15 @@ textarea, input, select {
 
 
 #header {
-    background: #E8ECEF url(../img/header-bg.png) top left repeat;
-    border: 1px solid #E8ECEF;
-    border-bottom: 1px solid #DAE1E5;
+
 }
 #header_bar {
-    margin-left: 1.5em;
-    padding-left: 3.5em;
+    background: #E8ECEF url(../img/header-bg.png) top left repeat;
+    border-bottom: 1px solid #DAE1E5;
+    width: 100%;
+    padding: .3em 1.5em;
     min-height: 4.2em;
-}
-@media screen and (max-width: 500px) {
-    #header {
-        background: #fafafa url(../img/body-bg.png) top left repeat;
-        border: none;
-    }
-    #header_bar {
-        background: #E8ECEF url(../img/header-bg.png) top left repeat;
-        margin: 0;
-        margin-top: 3.5em;
-        padding: 0;
-        min-height: 0;
-        width: 100%;
-        border-bottom: 1px solid #DAE1E5;
-    }
-    #header_bar > div {
-        margin: 0.5em;
-    }
+    margin-top: 10px;
 }
 #header_bar a, #header_bar a:link {
     color: #444;
@@ -194,16 +170,15 @@ textarea, input, select {
     font-size: 80%;
     color: #747474;
 }
-@media screen and (max-width: 500px) {
-    #object_title {
-      font-size: 150%;
-      vertical-align: middle;
-    }
+
+.site-info {
+  background: none;
 }
+
 #site_title {
     background: #fafafa url(../img/body-bg.png) top left repeat;
     min-height: 3.95em;
-    padding-left: 1.5em;
+    padding-left: 1em;
     font-size: 130%;
     padding-top: 1em;
     margin: 0;
@@ -225,21 +200,7 @@ textarea, input, select {
 #site_title a:hover {
     color: #111;
 }
-@media screen and (max-width: 500px) {
-    #site_title {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        border: none;
-        clear: both;
-        min-height: 0;
-        position: relative;
-        top: -2em;
-    }
-    #site_title h1 {
-        margin: 0.3em;
-    }
-}
+
 #object_actions {
     display: table-cell;
     height: 100%;
@@ -259,30 +220,24 @@ textarea, input, select {
     margin-bottom: 0;
     margin-right: 0.5em;
 }
+
 #login_info {
     float: right;
     clear: right;
     text-align: right;
-    margin-right: 2em;
+    margin-right: 0;
     margin-top: 0.4em;
 }
 #login_info .welcome {
     float: left;
     margin-right: 0.8em;
 }
-@media screen and (max-width: 500px){
-    #login_info {
-        margin: 0;
-    }
-    #login_info > div {
-        margin: 0.5em;
-    }
-}
+
 #header .site_search {
     float: right;
     clear: right;
     margin-top: 0.6em;
-    margin-right: 2em;
+    margin-right: 0;
 }
 #header .site_search input {
     float: left;
@@ -297,28 +252,7 @@ textarea, input, select {
     padding-left: 30px;
     margin-right: 0.5em;
 }
-@media screen and (max-width: 500px) {
-    #header {
-        margin: 0;
-        padding: 0;
-    }
-    #header .site_search {
-        float: none;
-        position: relative;
-        top: 6em;
-        padding-left: 0.5em;
-        padding-right: 0.5em;
-    }
-}
 
-@media screen and (max-width: 400px) {
-    .site_search input[type="submit"] {
-        display: none;
-    }
-    #header .site_search input[type="text"], #header .site_search #id_q {
-        width: 100%;
-    }
-}
 /*
 ====================================
  Map widget on a page
@@ -395,13 +329,13 @@ textarea, input, select {
 
 /*
 ====================================
- Nav 
+ Nav
 ====================================
 */
 #nav {
     list-style-type: none;
     position: absolute;
-    margin-left: 2em;
+    margin-left: 1.4em;
     margin-top: -2em;
 }
 #nav a, #nav a:link {
@@ -432,24 +366,7 @@ textarea, input, select {
     border: 1px solid #bfbfbf;
     color: #111;
 }
-@media screen and (max-width: 500px) {
-    #nav {
-        font-size: 86%;
-        background: red;
-        margin: 0.5em;
-        padding: 0;
-        float: none;
-        position: relative;
-        top: -3em;
-    }
-    #nav li {
-        margin: 0.2em;
-    }
-    
-    #nav li a {
-        padding: 0.5em 0.3em 0.5em 0.3em;
-    }
-}
+
 /*
 ====================================
  Footer
@@ -459,10 +376,15 @@ textarea, input, select {
 
 #footer {
     background: #e1e1e1 url(../img/footer-bg.png) top left repeat;
-    padding: 1.5em;
     clear: both;
     min-height: 30px;
 }
+
+.footer-inner {
+		padding: 1.5em;
+}
+
+
 #footer p { margin: 0; padding: 0 }
 
 #powered_by {
@@ -581,14 +503,6 @@ input[type="text"], input[type="password"] {
     height: 20px;
     margin-bottom: 5px;
     background: #fff;
-}
-
-@media screen and (max-width: 500px) {
-    input[type="text"], input[type="password"] {
-        width: 100%;
-        padding-left: 0;
-        padding-right: 0;
-    }
 }
 select {
     display: block;
@@ -845,27 +759,12 @@ div.templates li {
     margin-top: -0.6em;
 }
 
+
 #recentchanges li {
     list-style-type: none;
     margin-left: 0;
     padding-left: 30px;
     margin-bottom: 0.7em;
-}
-
-@media screen and (max-width: 500px) {
-    #recentchanges #limit_to {
-        float: none;
-        height: 2em;
-        margin: 0;
-        font-size: 95%;
-    }
-    #recentchanges h3 {
-        font-size: 100%;
-    }
-    #recentchanges li {
-        padding-left: 0;
-        margin-left: 0;
-    }
 }
 
 #recentchanges .changelabel {
@@ -963,7 +862,6 @@ div.templates li {
 */
 
 #attributions {
-    margin: 1.5em 1em 1.5em 1em;
     font-size: 80%;
     text-align: center;
 }
